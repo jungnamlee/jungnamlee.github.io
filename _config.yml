@@ -17,7 +17,7 @@ title: Jungnam's Blog
 email: jungnam.lee@oracle.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jungnamlee.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  jungnamlee
 
@@ -29,3 +29,9 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
