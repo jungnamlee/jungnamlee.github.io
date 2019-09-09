@@ -86,15 +86,24 @@ Leader Node가 최적화와 컴파일을 마친 코드를 Cluster내 모든 노�
 
 ### Using Amazon Redshift with Other Services
 
+
 ## Proof of Concept Playbook
+
 
 ## Amazon Redshfit Best Practices
 
+
+
 ## Managing Database Security
 
+
 ## Designing Tables
+
 
 ## Tuning Query Performance
 
 
 
+{% if page.comments %}
+{% include disqus.html %}
+{% endif %}
