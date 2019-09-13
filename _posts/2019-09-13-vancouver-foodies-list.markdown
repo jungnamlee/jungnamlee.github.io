@@ -7,6 +7,7 @@ comments: true
 categories: misc
 ---
 
+제목의 맛집은 어그로이고, 그냥 개인적으로 좋아하는 식당들을 적어보았습니다.  
 이 리스트는 주로 지인 추천으로부터 제작되었으며 밴쿠버를 떠나는 그날까지 업데이트 될 예정입니다.
 
 # 방문 완료
@@ -27,10 +28,18 @@ categories: misc
    - 클래식, 클래식 얼그레이 잡숴보세요, 코팅 뿐만 아니라 빵 자체도 매우 달콤
 - [Earnest Ice Cream](https://goo.gl/maps/vctt6XtvoCC3nePX6) / Ice Cream
    - 다운타운은 아니지만 가까움
-   - 밴쿠버에도 이런 아이스크림이?!? 싶어서 올렸음
+   - 밴쿠버에도 이런 아이스크림이?! 싶어서 올렸음
 - [24 Train Express Noodle House](https://goo.gl/maps/YFYERSjTUDAwzPSq7) / Vietnamese
-   - 레몬그라스 그릴드 치킨 후라이드 라이스 꼭 먹으셈
-
+   - 레몬그라스 그릴드 치킨 후라이드 라이스 꼭 드세요
+- [Mr. Steak](https://goo.gl/maps/eSuW2DkNpnws4eEs7) / Hong Kong Style Fast Food?
+   - 거의 회사 점심 급식
+   - 대중적이고 자극적인 후추 맛
+- [Rice N Spice](https://goo.gl/maps/JnTkKZocDfihJNQA9) / Indian
+   - 회사 급식 2
+   - 가는 이유는 오로지 칠리 치킨, 진짜 한국인 레벨급으로 매움
+- [Meinhardt Fine Foods](https://goo.gl/maps/U7a5i3KEGFw4vfLu9) / Sandwich, Salad bar, Indian
+   - 회사 급식 3
+   - 샌드위치+허머스 샐러드 은근히 배부름, Indian도 괜춘
 
 # 방문 예정 (미검증)
 - [Joyeaux Café & Restaurant](https://goo.gl/maps/FeMAD7CN263qaRWG8) / Vietnamese
@@ -53,6 +62,10 @@ categories: misc
    - 락사 너무 땡겨서 검색해서 넣어놨음
 - [Salmon n' Bannock](https://goo.gl/maps/A6FV5Mc42xV4LLfs6) / Canadian
    - 다운타운은 아니지만 가깝고 [Bannock](https://en.wikipedia.org/wiki/Bannock_(food))을 한번 체험 해야겠다고 생각해서 넣었음
+- [Ramen Danbo](https://goo.gl/maps/xHEcQ8kvtmdHc7ny7) / Japanese
+   - 개인적으로 라멘 즐겨먹진 않지만 친구의 강력 추천
+- [Ramen Marutama](https://goo.gl/maps/p2Pc9RBt7W9YDxru5) / Japanese
+   - 이하 동문. 2명이나 강력 추천
    
 # 번외 - 한식 먹고 싶을때
 - [Kosoo](https://goo.gl/maps/gcfXrwWjmYZjwAav5) / Korean
