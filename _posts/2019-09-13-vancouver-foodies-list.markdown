@@ -30,16 +30,10 @@ categories: misc
    - 다운타운은 아니지만 가까움
    - 밴쿠버에도 이런 아이스크림이?! 싶어서 올렸음
 - [24 Train Express Noodle House](https://goo.gl/maps/YFYERSjTUDAwzPSq7) / Vietnamese
-   - 레몬그라스 그릴드 치킨 후라이드 라이스 꼭 드세요
-- [Mr. Steak](https://goo.gl/maps/eSuW2DkNpnws4eEs7) / Hong Kong Style Fast Food?
-   - 거의 회사 점심 급식
-   - 대중적이고 자극적인 후추 맛
-- [Rice N Spice](https://goo.gl/maps/JnTkKZocDfihJNQA9) / Indian
-   - 회사 급식 2
-   - 가는 이유는 오로지 칠리 치킨, 진짜 한국인 레벨급으로 매움
-- [Meinhardt Fine Foods](https://goo.gl/maps/U7a5i3KEGFw4vfLu9) / Sandwich, Salad bar, Indian
-   - 회사 급식 3
-   - 샌드위치+허머스 샐러드 은근히 배부름, Indian도 괜춘
+   - 레몬그라스 그릴드 치킨 볶음밥 꼭 드세요
+- [Rodney's Oyster House](https://goo.gl/maps/nfLmp8hzDuefSFDf7) / Seafood
+   - 굴, 홍합찜만 먹었는데 괜찮았음
+   - 해피아워 아니면 가격의 압박이 있음
 
 # 방문 예정 (미검증)
 - [Joyeaux Café & Restaurant](https://goo.gl/maps/FeMAD7CN263qaRWG8) / Vietnamese
@@ -66,6 +60,10 @@ categories: misc
    - 개인적으로 라멘 즐겨먹진 않지만 친구의 강력 추천
 - [Ramen Marutama](https://goo.gl/maps/p2Pc9RBt7W9YDxru5) / Japanese
    - 이하 동문. 2명이나 강력 추천
+- [Pho Goodness](https://goo.gl/maps/x7xsWu4HyWfcJ97u8) / Vietnamese
+   - 누가 여기 추천했었는데 누구지
+- [Doubld DD Pizza](https://goo.gl/maps/ky44UqbsiYcpDNtU9) / Greek
+   - 다운타운은 아니지만 그리스 동료가 추천한 곳
    
 # 번외 - 한식 먹고 싶을때
 - [Kosoo](https://goo.gl/maps/gcfXrwWjmYZjwAav5) / Korean

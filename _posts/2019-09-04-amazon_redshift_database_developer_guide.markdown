@@ -75,14 +75,24 @@ Leader Node가 최적화와 컴파일을 마친 코드를 Cluster내 모든 노�
 
 
 ### Columnar Storage
-![](/assets/images/03a-Rows-vs-Columns.png)
+위에서도 언급했듯이 칼럼 형태 저장방식은 I/O를 줄이기 위한 중요한 팩터임.
 
+아래 그림이 Row 형태로 데이터 블락을 저장하는 방식임:
+![](/assets/images/03a-Rows-vs-Columns.png)
+OLTP성 애플리케이션은 트랜잭션마다 주로 단일 혹은 적은 양의 Row를 필요로 하고 Row내 대부분의 Value를 사용하기 때문에 행 기반 저장방식은 OLTP에 최적화 되있다고 볼 수 있음.
+
+아래는 Column 기반 저장 방식을 묘사:
 ![](/assets/images/03b-Rows-vs-Columns.png)
+- 필드에 대해 쿼리시 I/O 감소: 예제에서 같은 타입의 데이터를 Row 기반 대비 3배 더 많이 저장하는 것을 볼 수 있다.
+- 블락내 같은 필드 데이터들이 저장되기에 압축이 용이해짐
+- 필요한 필드=데이터 블락만 로드하기에 메모리 효율성도 증가 - 칼럼이 매우 많은 큰 테이블의 경우 효율성은 더욱 커짐 e.g. 100 칼럼 중 5 칼럼만 필요시 칼럼 기반은 5%만 로드하면 되나, 행 기반은 전부 로드해야함
 
 ### Internal Architecture and System Operation
 ![](/assets/images/05-InternalComponents.png)
 
 ### Workload Management
+WorkLoad Management(WLM)은 워크로드의 우선 순위를 관리해서 아주 작고 간단한 쿼리가 먼저 실행된 큰 쿼리에 블락되지 않도록 함.
+
 
 ### Using Amazon Redshift with Other Services
 
@@ -91,7 +101,6 @@ Leader Node가 최적화와 컴파일을 마친 코드를 Cluster내 모든 노�
 
 
 ## Amazon Redshfit Best Practices
-
 
 
 ## Managing Database Security
