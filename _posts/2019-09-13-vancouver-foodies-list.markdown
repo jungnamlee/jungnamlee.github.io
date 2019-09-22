@@ -34,6 +34,9 @@ categories: misc
 - [Rodney's Oyster House](https://goo.gl/maps/nfLmp8hzDuefSFDf7) / Seafood
    - 굴, 홍합찜만 먹었는데 괜찮았음
    - 해피아워 아니면 가격의 압박이 있음
+- [Craft Beer Market Vancouver](https://goo.gl/maps/YWBRX3VWdKXkyNxs8) / Beer, Restaurant
+   - 다운타운은 아니지만 가까움
+      - 진짜 온갖 맥주가 다 있음, 음식도 맛있음
 
 # 방문 예정 (미검증)
 - [Joyeaux Café & Restaurant](https://goo.gl/maps/FeMAD7CN263qaRWG8) / Vietnamese
@@ -58,8 +61,6 @@ categories: misc
    - 다운타운은 아니지만 가깝고 [Bannock](https://en.wikipedia.org/wiki/Bannock_(food))을 한번 체험 해야겠다고 생각해서 넣었음
 - [Ramen Danbo](https://goo.gl/maps/xHEcQ8kvtmdHc7ny7) / Japanese
    - 개인적으로 라멘 즐겨먹진 않지만 친구의 강력 추천
-- [Ramen Marutama](https://goo.gl/maps/p2Pc9RBt7W9YDxru5) / Japanese
-   - 이하 동문. 2명이나 강력 추천
 - [Pho Goodness](https://goo.gl/maps/x7xsWu4HyWfcJ97u8) / Vietnamese
    - 누가 여기 추천했었는데 누구지
 - [Doubld DD Pizza](https://goo.gl/maps/ky44UqbsiYcpDNtU9) / Greek

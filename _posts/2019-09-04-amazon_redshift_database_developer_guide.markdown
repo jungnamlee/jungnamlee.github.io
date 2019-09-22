@@ -91,16 +91,75 @@ OLTP성 애플리케이션은 트랜잭션마다 주로 단일 혹은 적은 양
 ![](/assets/images/05-InternalComponents.png)
 
 ### Workload Management
-WorkLoad Management(WLM)은 워크로드의 우선 순위를 관리해서 아주 작고 간단한 쿼리가 먼저 실행된 큰 쿼리에 블락되지 않도록 함.
-
+WorkLoad Management(WLM)은 워크로드의 우선 순위를 관리해서 아주 작고 간단한 쿼리가 먼저 실행된 큰 쿼리에 블락되지 않도록 함. 쿼리 큐들을 관리하며 각 큐별로 동시성등 다양한 설정 가능. 디폴트는 자동이지만 수동으로도 설정 가능.
 
 ### Using Amazon Redshift with Other Services
-
+SSH를 통하여 원격의 호스트로부터 로드 혹은 S3, DynamoDB등의 타 AWS 서비스로부터 로드, 또는 타 서비스로 언로드 가능 (서비스별로 상이)
 
 ## Proof of Concept Playbook
+POC를 위한 고려 요소등을 다루는데 처음 접하는 사람에게 좋을 만한 정보가 보여서 요약해보겠음.
 
+### Identifying the Goals of the Proof of Concept
+POC의 목표가 뭐일지를 정하는게 중요하다고 한다. 스킵.
+
+### Setting Up Your Proof of Concept
+#### Designing and Setting Up Your Cluster
+클러스터 셋업 시, 2 가지의 노드 타입이 있음:
+- **Dense Storage**: 아주 많은 사이즈의 DW를 저렴하게 사용 가능 - HDD 사용
+- **Dense Compute**: 고성능의 DW에 적합 - 빠른 CPU, 큰 용량의 RAM, SSD 사용
+
+추가로 고려할 만한 사항:
+- 클러스터 사이즈: 최소 노드 2개 필요 - 리더 노드는 추가 비용없이 포함 됨
+- 클러스터를 VPC에 구축: EC2-Classic 보다 더 나은 성능 제공
+- 최소 20 프로 또는 가장 큰 테이블이 요구하는 메모리의 3배 만큼의 여유 공간 확보 - 아래를 제공하는데 필요함
+   - 테이블 사용 및 재작성에 사용될 공간
+   - Vacuum 작업 및 테이블 재정렬에 사용될 공간
+   - 쿼리 중간 결과 저장을 위한 임시 테이블
+
+#### Converting Your Schema and Setting Up the Datasets
+AWS Schema Conversion Tool (AWS SCT) 또는 the AWS Database Migration Service (AWS DMS를 이용해서 기존 스키마, 코드, 데이터 변환 가능.
+
+### Cluster Design Considerations
+5개의 속성을 고려해야 하는데 **SET DW**를 기억하면 쉽다:
+- **S** - Sort Key는 다음을 고려해서 정하면 좋은데, 자세한건 다음 베스트 프랙티스 챕터내 Choose the Best Sort Key 섹션을 참고 할 것:
+   - 최대 3개 까지 Sort Key로 사용할 칼럼을 선택
+   - 특별성을 기준으로 오름차순으로 나열하되, 빈도 또한 고려할 것
+- **E** - Encoding은 각 칼럼, 테이블 별 압축 알고리즘을 결정하는데, 자동으로도 설정 가능함
+- **T** - Table 유지보수: 쿼리 통계가 최신으로 유지되면, 쿼리 옵티마이저는 더 효율적인 실행 계획을 생성 가능. 테이블 데이터에 변화가 있을시, `ANALYZE` 명령으로 통계 데이터 갱신 가능. `VACUUM` 명령으로 스캔할 블락 수를 최소화 할 수 있는데, 이 명령은 다음을 수행함:
+   - 블락에서 논리적으로 삭제된 Row들을 제거하여 블락 수 감소 시킴
+   - 데이터를 Sort Key 순서대로 유지해서 특정 블락들만 검색 할 수 있게 도와줌
+- **D** - 테이블 Distribution, 3가지 옵션이 있음:
+   - KEY: 분산할 칼럼을 지정
+   - EVEN: Round-Robin 기반으로 Compute Node 지정
+   - ALL: 각 Compute Node의 Database Slice에 테이블 사본 유지
+   - 최적의 분산 패턴을 고르기 위해 다음을 고려할 것:
+      - `Customers` 테이블을 조인 시 `customer id` 값을 자주 이용한다면, Slice별로 골고루 분산 시키기 위해 `customer id`를 분산 키로 사용하는 것을 추천
+      - 테이블이 5백만 Row 정도에 차원 데이터를 포함하고 있다면, `ALL`을 사용하길 권장
+      - `EVEN`은 안전한 선택이지만, 항상 모든 노드에 분산 된다는 것을 생각할 것
+- **W**
+   - WorkLoad Management
+
+### Amazon Redshift Evaluation Checklist
+Skip 예정
+
+### Benchmarking Your Amazon Redshift Evaluation
+Skip 예정
 
 ## Amazon Redshfit Best Practices
+### Amazon Redshift Best Practices for Designing Tables
+#### Take the Tuning Table Design Tutorial
+#### Choose the Best Sort Key
+#### Choose the Best Distribution Style
+#### Use Automatic Compression
+#### Define Constraints
+#### Use the Smallest Possible Column Size
+#### Using Date/Time Data Types for Date Columns
+
+### Amazon Redshift Best Practices for Loading Data
+
+### Amazon Redshift Best Practices for Designing Queries
+
+### Working with Advisor
 
 
 ## Managing Database Security
