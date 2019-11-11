@@ -137,7 +137,7 @@ AWS Schema Conversion Tool (AWS SCT) 또는 the AWS Database Migration Service (
       - 테이블이 5백만 Row 정도에 차원 데이터를 포함하고 있다면, `ALL`을 사용하길 권장
       - `EVEN`은 안전한 선택이지만, 항상 모든 노드에 분산 된다는 것을 생각할 것
 - **W**
-   - WorkLoad Management
+   - WorkLoad Management!
 
 ### Amazon Redshift Evaluation Checklist
 Skip 예정
@@ -148,8 +148,36 @@ Skip 예정
 ## Amazon Redshfit Best Practices
 ### Amazon Redshift Best Practices for Designing Tables
 #### Take the Tuning Table Design Tutorial
+"Tutorial: Tuning Table Design" 참조
+
 #### Choose the Best Sort Key
+Sort Key가 데이터 저장시 정렬 순서를 결정하고, 쿼리 옵티마이저가 이 정렬 순서를에 쿼리 최적화에 활용. 정렬 키 선택시 다음을 고려:
+- 최근 데이터를 주로 쿼리한다면 Timestamp 칼럼을 Sort Key의 선행 칼럼으로 설정
+- 한 칼럼에 대해 범위 혹은 = 으로 쿼리시 해당 칼럼을 Sort Key로 설정
+   - 해당 칼럼의 Min, Max 값 정보가 저장되기에 전체 블락 스캔할 필요가 없어짐
+- 주로 테이블 조인 시, 조인 칼럼을 Sort Key 및 Distribution Key로 지정
+   - 느린 해시 조인이 아닌, Sort 과정 없이 Sort merge 조인을 활용하게 됨
+
 #### Choose the Best Distribution Style
+쿼리 옵티마이저는 조인이나 Aggregation이 필요 할때, Row들을 컴퓨트 노드들로 분산 시킴. Distribution Style 선택의 목표는 데이터를 필요한 곳에 위치 시킴으로써 쿼리 실행시 데이터 재분배를 최소화 하는 것.
+
+1. 팩트 테이블과 공통의 칼럼을 가진 하나의 차원 테이블과 같이 분산
+팩트 테이블은 Distribution Key를 하나만 가질 수 있음. 해당 키가 아닌 다른 키에 조인하는 경우는 해당 팩트 테이블과 같이 배치되지 않게 됨.
+조인 빈와 조인 될 Row들의 사이즈를 고려하여 같이 배치 시킬 하나의 차원을 정함. 차원 테이블의 Primary Key와 이와 연결 된 팩트 테이블의 Foreign Key를 DISTKEY로 설정.
+
+2. 필터된 데이터 집합의 크기를 기준으로 가장 큰 차원을 선택
+조인에 사용되는 행만 분산시켜야 하기 때문에 테이블 크기가 아닌 필터 된 데이터의 크기를 고려
+
+3. 필터된 결과에서 Cardinality가 높은 칼럼을 선택
+예를 들어, Sales 테이블을 Date 칼럼 기준으로 분산 시, 특정 시즌에만 판매가 이뤄진게 아닌 이상 데이터가 고르게 분포 될 것. 그러나 
+Range 조건으로 해당 Date를 쿼리한다면 대부분의 필터 된 Row들은 제한된 Slice에 존재하게 되며 쿼리 워크로드가 편향되게 됨.
+
+4. 일부 차원 테이블을 ALL 분산을 사용하도록 변경
+만약 차원 테이블이 팩트 테이블과 같이 배치 될 수 없다면, 모든 노드에 분산 시키는 것으로 쿼리 성능을 대폭 향상 시킬 수 있음.
+하지만 ALL 분산은 스토리지 용량, 로딩 시간, 유지보수 부담을 증가 시키는 점 또한 고려 할 것.
+
+Redshift가 적절한 Distribution 스타일을 고르게 하려면 DISTSTYLE을 사용하지 말 것!
+
 #### Use Automatic Compression
 #### Define Constraints
 #### Use the Smallest Possible Column Size

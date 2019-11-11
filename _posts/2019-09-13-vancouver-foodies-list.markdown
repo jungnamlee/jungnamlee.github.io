@@ -7,8 +7,9 @@ comments: true
 categories: misc
 ---
 
-제목의 맛집은 어그로이고, 그냥 개인적으로 좋아하는 식당들을 적어보았습니다.  
+제목의 맛집은 어그로이고, 그냥 개인적으로 좋아하는 식당들을 적어보았습니다.
 이 리스트는 주로 지인 추천으로부터 제작되었으며 밴쿠버를 떠나는 그날까지 업데이트 될 예정입니다.
+제 구글맵스 리스트에서도 확인 가능합니다: https://goo.gl/maps/uac6XByKQf6DFykw9
 
 # 방문 완료
 - [SalaThai](https://goo.gl/maps/uy7DM7YUYCkPndKy7) / Thai
