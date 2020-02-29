@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "개인적인 밴쿠버 다운타운 맛집 리스트"
+title:  "개인적인 밴쿠버 맛집 리스트"
 
 date:   2019-09-13 13:20:00 -0700
 comments: true
@@ -15,20 +15,18 @@ categories: misc
 - [SalaThai](https://goo.gl/maps/uy7DM7YUYCkPndKy7) / Thai
    - 태국인 동료가 나름 그럴싸한 태국 음식이라고 추천
    - 가성비 끝판왕. Fried Rice, Gaeng Dang 존맛
-   - 참고로 이런 곳은 사와디캅~ 하면서 들어가야 간지임
 - [Tacofino Oasis](https://goo.gl/maps/9Y3rxW1nHm1m2VKd6) / Mexican
    - Crisp Chicken Burrito 13달러 배부르고 맛있음
-   - La Taqueria 보다 훨씬 가성비 좋음
 - [Frying Pan](https://goo.gl/maps/dsvWtto6NqJxdCGD7) / Korean Fusion
-   - 한국 분들이 하시는 푸드트럭, 한국말로 인사했더니 감튀 공짜로 주심
    - Extra Spicy 치킨 버거 맛있고 안매움. 치킨 Bowl도 맛있음
+   - 한국 분들이 하시는 푸드트럭, 한국말로 인사했더니 감튀 공짜로 주심
 - [Congee Noodle Delight](https://goo.gl/maps/fTqwBCUrWUUMeJww5) / Chinese
    - 광동, 홍콩식 중국요리
-   - 완탕면만 먹어봤는데 나쁘지 않았음, 본토 느낌남. 재방문 예정
+   - 완탕면만 먹어봤는데 나쁘지 않았음
 - [Cartems Donuts](https://goo.gl/maps/YcTWk8gMQvfKsewQA) / Donut
+   - 팀 동료 피셜 밴쿠버 3대 도넛
    - 클래식, 클래식 얼그레이 잡숴보세요, 코팅 뿐만 아니라 빵 자체도 매우 달콤
 - [Earnest Ice Cream](https://goo.gl/maps/vctt6XtvoCC3nePX6) / Ice Cream
-   - 다운타운은 아니지만 가까움
    - 밴쿠버에도 이런 아이스크림이?! 싶어서 올렸음
 - [24 Train Express Noodle House](https://goo.gl/maps/YFYERSjTUDAwzPSq7) / Vietnamese
    - 레몬그라스 그릴드 치킨 볶음밥 꼭 드세요
@@ -36,12 +34,35 @@ categories: misc
    - 굴, 홍합찜만 먹었는데 괜찮았음
    - 해피아워 아니면 가격의 압박이 있음
 - [Craft Beer Market Vancouver](https://goo.gl/maps/YWBRX3VWdKXkyNxs8) / Beer, Restaurant
-   - 다운타운은 아니지만 가까움
-      - 진짜 온갖 맥주가 다 있음, 음식도 맛있음
+   - 진짜 온갖 맥주가 다 있음, 음식도 맛있음
 
-# 방문 예정 (미검증)
+- [Moltaqa Moroccan Restaurant](https://g.page/moltaqa-vancouver?share) / Moroccan cuisine
+   - 처음 먹어보는 모로코 음식 - 메뉴 추천받아서 시켰음, 맛있고 분위기 좋음
+   - 헤이스팅스 노숙자거리 유의
+- [Purebread](https://goo.gl/maps/bLHtvvMEf86CdZDPA) / Bakery
+   - 줄서서 먹는 디저트, 베이커리 맛집
+- [Small Victory Bakery](https://goo.gl/maps/TSGbj7DgULKsxLf58) / Cafe, Bakery
+   - 친구가 테이크아웃 해온 디저트 케잌 먹어봄. 청담동 감성
+- [Pholicious](https://goo.gl/maps/wV1kt2FhkWA8q3U18) / Vietnamese
+   - 우리동네 가성비 끝판왕, 비프 포 + 치킨 반미 해서 13달러 맛있음
+   - 장소 협소
 - [Joyeaux Café & Restaurant](https://goo.gl/maps/FeMAD7CN263qaRWG8) / Vietnamese
-   - 캐나다인 동료가 이집 쌀국수 추천
+   - 캐나다인 동료가 이집 쌀국수 추천, Pholicious 보다는 가성비 안좋음
+- [Fanny Bay Oyster Bar & Shellfish Market](https://goo.gl/maps/jUEZGzeDqMobdoB5A) / Oyster Bar
+   - 굴도 맛있지만 음식 대부분 다 맛있음
+   - 홍합찜에 빵찍어먹기, 피시 앤 칩스 추천
+- [Chinatown BBQ](https://goo.gl/maps/wCR9TKNZj6CqtbZu6) / Chinese
+   - Roasted Pork, BBQ Pork 강추   
+- [Mott32 Vancouver](https://g.page/Mott32Van?share) / Chinese
+   - 다른 대도시에도 있는 퓨전 차이니즈. 분위기, 가격으로 유명함
+- [Dynasty Seafood Restaurant](https://goo.gl/maps/CJ9NpehCHtSdkRsy7) / Chinese
+   - 본격 딤섬 맛집, 강추
+   - 타 지역 유사 브랜드에 유의
+- [Shanghai River Restaurant](https://goo.gl/maps/VrAgKtaCde8Sea1n6) / Chinese
+   - 북경오리 맛집, 가격도 적절
+   
+# 방문 예정 (미검증)
+
 - [Guu Original Thurlow](https://goo.gl/maps/DP6gx6cu5Z9FenFt9) / Japanese Izakaya
    - 한국분이 그럴싸하다고 그랬는데여
 - [Black+Blue](https://goo.gl/maps/qrGtZosFZXff5M4R8) / Steak house
@@ -66,16 +87,15 @@ categories: misc
    - 누가 여기 추천했었는데 누구지
 - [Doubld DD Pizza](https://goo.gl/maps/ky44UqbsiYcpDNtU9) / Greek
    - 다운타운은 아니지만 그리스 동료가 추천한 곳
+- [Lamajoun](https://g.page/Lamajoun?share) / Armenian
+   - 아르메니안 음식. 미친 구글 평점
    
 # 번외 - 한식 먹고 싶을때
 - [Kosoo](https://goo.gl/maps/gcfXrwWjmYZjwAav5) / Korean
-   - 물냉면이랑 닭갈비 먹었는데 괜찮았음
+   - 물냉면이랑 닭갈비 먹었는데 괜찮았음, 최근 2호점도 생김
 - [Jang Mo Jib](https://goo.gl/maps/bTTAPFXq5pwqU3P77) / Korean
    - 감자탕 맛있음 - 친구가 좋아해서 벌써 3번 먹음
    - 새벽 3시 까지 함
-- [JMT Robson](https://goo.gl/maps/j5NW6T7wy14gre7LA) / Korean
-   - 분식 생각날때 좋음, 떡볶이 + 튀김류 전부 추천
-   - JMT = 존맛탱
 - [Hongdae Pocha Cafe](https://goo.gl/maps/Tx2vGNKn3pxCqEry5) / Korean
    - 테이블에 호출 벨 있음
    - 젊음을 느낄 수 있음

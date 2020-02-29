@@ -182,6 +182,7 @@ Redshift가 적절한 Distribution 스타일을 고르게 하려면 DISTSTYLE을
 #### Define Constraints
 #### Use the Smallest Possible Column Size
 #### Using Date/Time Data Types for Date Columns
+시간, 날짜 등의 데이터는 CHAR, VARCHAR 말고 DATE, TIMESTAMP 타입을 사용하는 것이 성능에 유리함.
 
 ### Amazon Redshift Best Practices for Loading Data
 
